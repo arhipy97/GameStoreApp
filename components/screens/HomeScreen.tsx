@@ -1,4 +1,3 @@
-// @ts-ignore
 import styled from 'styled-components/native';
 import React, {useState, useRef} from 'react';
 import {StatusBar} from 'react-native';
@@ -6,7 +5,7 @@ import {Text} from '../textStyle';
 import {categoryList} from '../../src/categories';
 import {games} from '../../src/gameData';
 
-export const HomeScreen: React.FC = () => {
+export const HomeScreen = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const gamesRef = useRef();
 
