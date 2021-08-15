@@ -5,7 +5,7 @@ import {Text} from '../textStyle';
 import {categoryList} from '../../src/categories';
 import {games} from '../../src/gameData';
 
-export const HomeScreen = () => {
+export const HomeScreen = ({navigation}) => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const gamesRef = useRef();
 
@@ -16,7 +16,7 @@ export const HomeScreen = () => {
 
   const GameItem = (game) => {
     return (
-      <Game>
+      <Game onPress={() => navigation.navigate("GameScreen", {game: game})}>
         <GameCover source={game.cover} />
         <GameInfo backgroundColor={game.backgroundColor}>
           <GameImage source={game.cover} />
