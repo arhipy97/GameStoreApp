@@ -36,7 +36,7 @@ export const HomeScreen = ({navigation}) => {
         <Text large>
           Hello{" "}
           <Text large bold>
-            DesignIntoCode,
+            Arhipy97,
           </Text>
           {`\n`}
           <Text large bold>

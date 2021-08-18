@@ -8,7 +8,7 @@ import {games} from '../../src/gameData';
 export const LiveScreen = () => {
 	return (
 		<Container>
-			<StatusBar barStyle="light-content"></StatusBar>
+			<StatusBar barStyle="light-content" />
 			<Header>
 				<Text large bold>Streaming</Text>
 				<SearchContainer>
